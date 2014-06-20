@@ -14,6 +14,10 @@ $(function fizzBuzz(num){
 console.log(fizzBuzz(100));
 
 
+$(function(){
+	$('enter-number').val();
+});
+
 function addItem(num) {
 	$(this).append('<body>');
 }
