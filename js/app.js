@@ -1,23 +1,30 @@
-$(function fizzBuzz(num){
-	if ((num % 3) === 0 && (num % 5) !== 0) {
-		return ("Fizz");
-	} else if 
-	((num % 5) === 0 && (num % 3) !== 0 {
-		return("Buzz"); 
-	} else if 
-	((num % 3) === 0 && (num % 5) === 0) {
-		return("FizzBuzz"); 
-		} else {
-		return num;
-				}
-				
-console.log(fizzBuzz(100));
+//$(document).ready(function(){
 
-
-$(function(){
-	$('enter-number').val();
-});
-
-function addItem(num) {
-	$(this).append('<body>');
+var num = 100;
+$(function fizzBuzz(num) { 
+  //var fizzCount = 0;
+for (var i = 1; i <= num; i += num) {
+  if ($(num % 3) === 0 && (num % 5) !== 0) {
+    $('#output').append('<p>Fizz</p>');
+//return ("Fizz");
+  } else if 
+  ($(num % 5) === 0 && (num % 3) !== 0) {
+    $('#output').append('<p>Buzz</p>');
+  //  return("Buzz");
+  } else {
+  ($(num % 3) === 0 && (num % 5) === 0){
+    $('#output').append('<p>FizzBuzz<p>');
+    //return("FizzBuzz");
 }
+}
+}
+
+//function addOutput(){
+  //$('')
+//}
+
+    $(function(){
+      $('form').on('submit',fizzBuzz);
+    });
+  });
+});
